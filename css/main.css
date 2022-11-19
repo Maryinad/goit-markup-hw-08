@@ -75,6 +75,7 @@ body {
 }
 
 .container {
+  min-width: 320px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -312,14 +313,19 @@ header {
 .header__list {
   display: flex;
   gap: 30px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: 93px;
+}
+@media screen and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__nav {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header__logopart {
@@ -353,6 +359,11 @@ header {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .header__contacts-nav {
+    display: none;
+  }
 }
 .header__contacts-nav:hover, .header__contacts-nav:focus {
   color: #2196f3;
