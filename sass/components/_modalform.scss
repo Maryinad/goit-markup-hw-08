@@ -1,0 +1,134 @@
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primery-text-color;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+input {
+  padding-left: 42px;
+}
+
+.input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms $cubic;
+
+  .modal-input:hover + &,
+  .modal-input:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid $modal-border;
+  border-radius: 4px;
+  transition: border-color 250ms $cubic;
+  color: $primery-text-color;
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.modal-text::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  transition: color 250ms $cubic;
+
+  .modal-text:hover & {
+    color: $accent-color;
+  }
+}
+
+.modal-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid $modal-border;
+  border-radius: 4px;
+  resize: none;
+  transition: color 250ms $cubic;
+  padding: 12px 16px;
+  color: $primery-text-color;
+  outline: none;
+}
+
+.btn-form {
+  text-align: center;
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 52px;
+  border: none;
+  color: $primery-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.check {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primery-text-color;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid $header-logopart;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+}
+
+.input-check:checked + .check::before {
+  background-position: center;
+  background-color: $accent-color;
+  border: transparent;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url(../images/check.svg);
+}
+
+.rules {
+  color: $accent-color;
+}
+
+.check-field {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
