@@ -156,8 +156,16 @@ footer {
 }
 
 .footer-container {
-  display: flex;
   align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+  }
+}
+
+.footer-contacts {
+  outline: 1px solid tomato;
 }
 
 .logo .footer-container {
@@ -207,6 +215,7 @@ address {
 
 .footer-sign {
   margin-left: auto;
+  outline: 1px solid tomato;
 }
 
 .footer-sign-title {
@@ -220,9 +229,13 @@ address {
 }
 
 .footer-sign-form {
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sign-form {
+    display: flex;
+  }
 }
 
 .footer-sign-input {
@@ -281,6 +294,7 @@ address {
 
 .add {
   margin-left: 70px;
+  outline: 1px solid tomato;
 }
 
 .add-title {
