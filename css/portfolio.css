@@ -110,8 +110,20 @@ header {
 .header__nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__logopart {
@@ -171,8 +183,13 @@ header {
   background-color: #2196f3;
   position: absolute;
   display: block;
-  bottom: -33px;
+  bottom: -29px;
   left: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .current::after {
+    bottom: -31px;
+  }
 }
 
 .logo {
@@ -189,6 +206,12 @@ header {
   gap: 50px;
   margin-right: 0;
   align-items: baseline;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .portfolio-link {
