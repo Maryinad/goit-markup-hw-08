@@ -544,11 +544,16 @@ header {
 .hero__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -559,7 +564,17 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 32px;
+  padding: 18px 24px;
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    padding: 10px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
 }
 
 .backdrop {

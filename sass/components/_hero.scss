@@ -71,11 +71,15 @@
 .hero__title {
   color: $button-text-color;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 .hero__button {
   border: 0;
@@ -85,5 +89,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 32px;
+  padding: 18px 24px;
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
