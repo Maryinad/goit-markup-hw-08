@@ -906,6 +906,8 @@ input {
 }
 
 .properties__list {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -975,6 +977,8 @@ input {
 }
 
 .team__list {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
