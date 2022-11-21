@@ -6,11 +6,17 @@ footer {
 
 .footer-container {
   display: block;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 
@@ -72,7 +78,7 @@ footer {
     color: $accent-color;
   }
 
-  .address-city {
+  .address-link.address-city {
     color: $primery-white-color;
     transition: color $time $cubic;
   }
