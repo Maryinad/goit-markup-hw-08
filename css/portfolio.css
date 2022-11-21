@@ -191,6 +191,11 @@ header {
     bottom: -31px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .current::after {
+    bottom: -32px;
+  }
+}
 
 .logo {
   text-decoration: none;
@@ -380,7 +385,14 @@ footer {
   }
 }
 
+.address-link.address-city {
+  color: #ffffff;
+}
+
 .address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -388,10 +400,6 @@ footer {
 }
 .address-link:hover, .address-link:focus {
   color: #2196f3;
-}
-.address-link .address-link.address-city {
-  color: #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .add {
@@ -467,6 +475,7 @@ footer {
 }
 
 .footer-sign-title {
+  text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;

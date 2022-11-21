@@ -95,12 +95,20 @@ input {
 }
 
 .check {
-  font-size: 14px;
+  font-size: 7px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $primery-text-color;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 450px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 
   &::before {
     content: "";
